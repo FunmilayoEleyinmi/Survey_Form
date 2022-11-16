@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <form id="form">
+        <div class="form-control">
+            <div>
+            <label for="name" id="label-name">Name</label>
+            <!-- input Type Text -->
+            <input type="text" id="name" placeholder="Enter your name"/>
+        </div>
+        <div>
+            <label for="Age" id="label-age">Age</label>
+            <input type="text" id="Age" placeholder="Enter your age">
+        </div>
+        <div>
+            <label for="Email" id="label-email">Email</label>
+            <input type="email" id="Email" placeholder="Enter your email address">
+        </div>
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">Which option best describes You?</label>
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control-1">
+            <label>Would you recommend Stutern to a friend?</label><br>
+            <!-- Input Type Radio Button -->
+            <input type="radio" id="recommed-1" name="recommed" value="Yes">
+            <label for="recommed-1">Yes</label><br>
+            <input type="radio" id="recommed-2" name="recommed" value="No">
+            <label for="recommed-2">No</label><br>
+            <input type="radio" id="recommed-3" name="recommed" value="Maybe">
+            <label for="recommed-3">Maybe</label><br>
+         </div>
+
+        <div class="form-control-1">
+            <label>Languages and Frameworks Known
+                <small>(check all that apply)</small>
+            </label><br>
+            <!-- input type checkbox -->
+            <input type="checkbox" id="inp" name="inp" value="C">
+            <label for="inp">C</label><br>
+            <input type="checkbox" id="inp" name="inp" value="C++">
+            <label for="inp">C++</label><br>
+            <input type="checkbox" id="inp" name="inp" value="C#">
+            <label for="inp">C#</label><br>
+            <input type="checkbox" id="inp" name="inp" value="Java">
+            <label for="inp">Java</label><br>
+            <input type="checkbox" id="inp" name="inp" value="JavaScript">
+            <label for="inp">JavaScript</label><br>
+            <input type="checkbox" id="inp" name="inp" value="Python">
+            <label for="inp">Python</label><br>
+            <input type="checkbox" id="inp" name="inp" value="Ruby">
+            <label for="inp">Ruby</label><br>
+            <input type="checkbox" id="inp" name="inp" value="SQL">
+            <label for="inp">SQL</label><br>
+            <input type="checkbox" id="inp" name="inp" value="Angular">
+            <label for="inp">Angular</label><br>
+            <input type="checkbox" id="inp" name="inp" value="React">
+            <label for="inp">React</label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+            <!-- multi line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+        </form>
+</body>
+</html>
